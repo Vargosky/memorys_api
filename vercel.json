@@ -1,0 +1,19 @@
+{
+    "version": 2,
+    "name": "api-redsocial",
+    "builds": [
+    {
+        "src": "index.js",
+        "use": "@vercel/node"
+    }
+    ],
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "/index.js"
+        }
+    ],
+    "env": {
+    "MY_ENV_VARIABLE": "mi-variable"
+    }
+}
